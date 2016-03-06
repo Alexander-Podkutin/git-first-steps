@@ -4,7 +4,7 @@
 
 **git clone url** - Clone repository from specific URL(HTTPS or SSH)
 
-**git add .** - Add all ustaged files to index
+**git add .** - Add all unstaged files to index
 
 **git commit -m "Commit message"** - Create commit from staged files with specific message
 
@@ -20,5 +20,17 @@
 **git remote -v** - Show remote repos
 
 **git remote set-url remoteName url** - Set(change) url for specific remote repo
+
+### Undo changes
+
+**git checkout -- .** - Remove all unstaged changes(checkout to last commit)
+
+**git clean -fd** - Remove all untracked files and directories(use -n to see what would be removed)
+
+**git reset HEAD** - Remove current branch staged changes and create unstaged changes(--hard remove unstaged changes too)
+
+**git reset HEAD~1** - Remove last commit and checkout HEAD to previous commit or specific commit if you write id of commit
+
+**git revert -n idOfCommit** - Revert changes of specific commit and not creating commit of it revert(_-n_)
 
 
