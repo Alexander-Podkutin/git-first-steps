@@ -33,4 +33,22 @@
 
 **git revert -n idOfCommit** - Revert changes of specific commit and not creating commit of it revert(_-n_)
 
+### History
 
+**git log -3 --pretty=short --stat** - Show history of three last commits in short view(Commit hashcode, Author, message) 
+
+**git log -1 -p** - Show last commit with diff
+
+**git log --since="date" --after="date"** - Show range of history, date may be like "_11/01/2016_" or "_2 weeks ago_"
+
+### Diff
+
+**git diff --cached** - Changes between index(staged) and last commit
+
+**git diff HEAD** - Changes in working tree(unstaged) and last commit 
+
+**git diff HEAD^ HEAD** - Show diff of commit before last commit and last commit
+
+**git diff master branchName** - Changes between master and branch. _Right-side_ is result of compare
+
+**git diff --name-status** - Show only file names and status of diff
