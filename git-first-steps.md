@@ -52,3 +52,32 @@
 **git diff master branchName** - Changes between master and branch. _Right-side_ is result of compare
 
 **git diff --name-status** - Show only file names and status of diff
+
+### Branches
+
+**git checkout -b branchName** - Create branch and switch to that branch
+
+**git checkout branchName** - Switch to specific branchName
+
+**git branch -a** - Show all branches(local nad remotes)
+
+**git log --all --decorate --oneline** - Show all commits from all local branches in oneline view
+
+**git branch -d branchName** - Delete specific branchName
+
+
+### Merge
+
+**git merge branchName** - Merge current branch with branchName
+
+**git mergetool** - Open merge tool if merge done with conflict
+	Config of kdiff3 merge tool:
+	Add to .gitconfig
+
+    [merge]
+        tool = kdiff3
+
+        [mergetool "kdiff3"]
+            path = C:/Program Files/KDiff3/kdiff3.exe
+            keepBackup = false
+            trustExitCode = false
