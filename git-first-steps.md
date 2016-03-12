@@ -65,7 +65,6 @@
 
 **git branch -d branchName** - Delete specific branchName
 
-
 ### Merge
 
 **git merge branchName** - Merge current branch with branchName
