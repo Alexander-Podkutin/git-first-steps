@@ -80,3 +80,9 @@
             path = C:/Program Files/KDiff3/kdiff3.exe
             keepBackup = false
             trustExitCode = false
+
+### Stash
+
+**git stash** - Add all unstaged and staged changes to stash stack(after this, you can push or pull or merge, without adding your stashed changes to commit)
+
+**git apply** - Apply recent stash from stack(all files will be unstaged)
