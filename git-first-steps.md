@@ -37,6 +37,8 @@
 
 **git log -3 --pretty=short --stat** - Show history of three last commits in short view(Commit hashcode, Author, message) 
 
+**git log --pretty=format:'%Cgreen %h %Creset %an %ai %Cgreen %s'** - Some custom format of log output
+
 **git log -1 -p** - Show last commit with diff
 
 **git log --since="date" --after="date"** - Show range of history, date may be like "_11/01/2016_" or "_2 weeks ago_"
@@ -71,7 +73,7 @@
 
 **git mergetool** - Open merge tool if merge done with conflict
 	Config of kdiff3 merge tool:
-	Add to .gitconfig
+	Add to _~/.gitconfig_
 
     [merge]
         tool = kdiff3
@@ -86,3 +88,13 @@
 **git stash** - Add all unstaged and staged changes to stash stack(after this, you can push or pull or merge, without adding your stashed changes to commit)
 
 **git apply** - Apply recent stash from stack(all files will be unstaged)
+
+### Aliases
+
+**git config --global alias.plo 'pull origin'** - Add alias of _pull origin_ to global config, another way is edit _~/.gitconfig_:
+
+    [alias]
+            pso = push origin
+            ploreb = pull --rebase origin
+            st = status
+            lg = log --pretty=format:'%Cgreen %h %Creset %an %ai %Cgreen %s'
