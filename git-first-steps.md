@@ -98,3 +98,5 @@
             ploreb = pull --rebase origin
             st = status
             lg = log --pretty=format:'%Cgreen %h %Creset %an %ai %Cgreen %s'
+	    chkmst = checkout master
+	    df-lt = diff HEAD~1 HEAD
